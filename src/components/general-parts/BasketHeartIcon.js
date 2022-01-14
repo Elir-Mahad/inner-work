@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
-//
+import { Link } from "react-router-dom";
 import { useStateValue } from "../../rca/StateProvider";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import {
+  BasketAndCount,
+  BasketAndCountBox,
+  BasketIcon,
+  ItemCount,
+} from "../../Styles";
 
 //!------------------------------------IMPORTS
 
@@ -15,9 +22,16 @@ const BasketHeartIcon = () => {
   });
   // //
   return (
-    <div>
-      <h1>Basket heart icon</h1>
-    </div>
+    <BasketAndCountBox className="basket">
+      <Link style={{ textDecoration: "none" }} to="/favourite">
+        <BasketAndCount>
+          <ItemCount>{basket?.length}</ItemCount>
+          <BasketIcon>
+            <FavoriteIcon />
+          </BasketIcon>
+        </BasketAndCount>
+      </Link>
+    </BasketAndCountBox>
   );
 };
 
