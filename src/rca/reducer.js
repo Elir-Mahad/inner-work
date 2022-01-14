@@ -53,4 +53,19 @@ const reducer = (state, action) => {
   // title: "Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI VGA port),Black"
   // __proto__: Object
   // type: "ADD_TO_BASKET"
+
+  // create switch
+
+  switch (action.type) {
+    // switch stores an action, and the 'type' of that action
+    // switch also checks all the cases.
+    // cases are strings that represent a specific action
+
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
+    // break; // this break signifies that the case logic is finished
+  }
 };
