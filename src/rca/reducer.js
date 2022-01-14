@@ -54,7 +54,7 @@ const reducer = (state, action) => {
   // __proto__: Object
   // type: "ADD_TO_BASKET"
 
-  // create switch
+  // -------------------------------------
 
   switch (action.type) {
     // switch stores an action, and the 'type' of that action
@@ -65,6 +65,36 @@ const reducer = (state, action) => {
       return {
         ...state,
         user: action.user,
+      };
+
+    //---------------------------------
+
+    case "ADD_TO_BASKET":
+      // This  first case "ADD_TO_BASKET"
+      // represent the action of adding an item to the basket
+      // Below is the Logic for adding an item to the basket
+
+      return {
+        // After the item that has been clicked on,
+        // is added to the basket, return:
+
+        ...state,
+        // Return whatever the state currently is
+
+        basket: [...state.basket, action.item],
+        // Return a new basket that's going to contain:
+        // The current basket (whatever items were left over) --> ...state.basket
+        // + the item that was just picked --> action.item
+
+        // So if you picked one item,
+        // then the new basket will contain:
+        // the 4 leftover items + the item that was previously picked.
+        // Which will be a total of 5 items.
+
+        // IMPORTANT:
+        // action.item gets the data points
+        // that we asked from in the addtobasket function.
+        // This function is in the product.js
       };
     // break; // this break signifies that the case logic is finished
   }
