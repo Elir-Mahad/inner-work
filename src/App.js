@@ -28,6 +28,7 @@ function App() {
             <Route path="/synopsis">{/* Synopsis page route */}</Route>
             <Route path="/userguide">{/* User guide page route */}</Route>
             <Route path="/general">{/* General page route */}</Route>
+            <Route path="/favourite">{/* Liked quotes route */}</Route>
           </Switch>
         </Router>
       </StateProvider>
