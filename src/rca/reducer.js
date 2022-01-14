@@ -67,8 +67,6 @@ const reducer = (state, action) => {
         user: action.user,
       };
 
-    //---------------------------------
-
     case "ADD_TO_BASKET":
       // This  first case "ADD_TO_BASKET"
       // represent the action of adding an item to the basket
@@ -97,5 +95,88 @@ const reducer = (state, action) => {
         // This function is in the product.js
       };
     // break; // this break signifies that the case logic is finished
+
+    case "REMOVE_FROM_BASKET":
+      // This second case "REMOVE_FROM_BASKET"
+      // represents the action of removing an item from the basket
+      // Below is the Logic for removing item from basket
+
+      let newBasket = [...state.basket];
+      // The constant new basket store whatever the current basket is.
+      // Here we are simply cloning the basket,
+      // into our own variable which is: newBasket.
+
+      const index =
+        // The constant index stores a process.
+        // This process will:
+        state.basket
+          // Take the current basket
+          .findIndex(
+            // Find the exact index
+            (basketItem) =>
+              // of the basket item that was clicked on
+              basketItem.id === action.id
+            // check if the action.id of this item
+            // exists in the basket
+          );
+
+      console.log(action.id);
+
+      // To successfully remove an item from the basket we need:
+
+      // [1] Identify the item's action.id
+
+      // Whenever an items remove button is pressed
+      // the removeFromBasket function (in CheckoutProduct.js)
+      // dispatches the id of that item.
+      // This dispatching is formally identified as an 'action'.
+      // And the thing being dispatched is the item's ID.
+      // In the index constant,  we pull the id of the item
+      // that's been dispatched --> action.id.
+
+      // [2] Identify the item's exact location in basket.
+
+      // The findIndex() method helps us to do this.
+      // This method is useful because it only returns
+      // the first array element that matches the action.id.
+      // So if the basket contains 2 items that have the similar id
+      // only the item that was clicked will be removed.
+      // To learn more about this method click here:
+      // https://www.programiz.com/javascript/library/array/findindex
+
+      // So, when the action.id is dispatched:
+      // [a] get the dispatched id (action.id) of the item
+      // whose remove button was just pressed.
+      // [b] Check to see if the id of this item,
+      // is equivalent to the id of any items
+      // that are currently in the basket
+      // [c] find the exact location of this item via findindex()
+
+      if (index >= 0) {
+        // If the item that was clicked upon exists in the basket
+        newBasket
+          // then get the newbasket
+          // (which is the constant that stores our actual basket),
+          .splice(index, 1);
+        // splice (cut out) this item based on its index location and id
+      } else {
+        // otherwise produce the console warning
+        console.warn(
+          `Cant remove product (id: ${action.id}) as its not in the basket`
+        );
+      }
+      return {
+        ...state,
+        // then return the state
+        basket: newBasket,
+        // set the basket to the new basket
+        // Hence, the basket now will return the updated items after the item removal.
+      };
+    // break; // this break signifies that the case logic is finished
+
+    default:
+      return state;
   }
 };
+
+export default reducer;
