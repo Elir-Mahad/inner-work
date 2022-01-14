@@ -27,3 +27,30 @@ export const initialState = {
   // This basket has three items, therefore if the context api is working
   // then, on the page, it should display the number 3 next to the basket.
 };
+
+const reducer = (state, action) => {
+  // The constant reducer stores a function
+  // that has the two parameters state and action.
+
+  // We refer to the data layer as state;
+  // so anything inside the data layer is known as state.
+
+  // We manipulate the data layer with actions;
+  // such as: add item to basket, remove item from basket,etc
+
+  console.log(action);
+
+  // console log the items that are clicked on
+  // this is to check that the click function is working
+  // When the button is clicked, it should output
+  // the action type + items object and properties in the browsers console
+
+  // The console output shoud look like this:
+  // {type: "ADD_TO_BASKET", item: {…}}
+  // item:
+  // id: "1235"
+  // image: "https://images-na.ssl-images-amazon.com/images/I/81QpkIctqPL._AC_SX679_.jpg"
+  // title: "Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI VGA port),Black"
+  // __proto__: Object
+  // type: "ADD_TO_BASKET"
+};
