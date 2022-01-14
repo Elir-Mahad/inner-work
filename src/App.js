@@ -22,7 +22,11 @@ function App() {
   return (
     <div className="App">
       <StateProvider initialState={initialState} reducer={reducer}>
-        <h1>Inner work</h1>
+        <Router>
+          <Switch>
+            <Route path="/">{/* Landing page route */}</Route>
+          </Switch>
+        </Router>
       </StateProvider>
     </div>
   );
