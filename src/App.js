@@ -25,6 +25,7 @@ function App() {
         <Router>
           <Switch>
             <Route path="/">{/* Landing page route */}</Route>
+            <Route path="/synopsis">{/* Synopsis page route */}</Route>
           </Switch>
         </Router>
       </StateProvider>
