@@ -42,9 +42,38 @@ function LikedQuotesContainer({ id, tag, title, quoteText }) {
   };
 
   return (
-    <div>
-      <h1>Liked quotes</h1>
-    </div>
+    <LiQuoteBox>
+      <LiBackgroundImageContainer>
+        {/* Top texts and icons below */}
+        <LiTopTextIcon>
+          <LiTextIcon>
+            <SubjectIcon />
+            <LiTag>{tag}</LiTag>
+          </LiTextIcon>
+          <LiTextIcon>
+            <LiQuotetitle> {title}</LiQuotetitle>
+            <FormatListNumberedRtlIcon />
+          </LiTextIcon>
+        </LiTopTextIcon>
+        {/* The actual quote is below */}
+        <LiTextAndQuotes>
+          <LiQuotesLeft>
+            <FaQuoteLeft />
+          </LiQuotesLeft>
+          <LiTheQuote>{quoteText}</LiTheQuote>
+          <LiQuotesRight>
+            <FaQuoteRight />
+          </LiQuotesRight>
+        </LiTextAndQuotes>
+        {/* Liked icon below */}
+        <LiCategoryIcons>
+          <LiIconButton onClick={removeFromBasket}>
+            <DeleteIcon />
+          </LiIconButton>
+        </LiCategoryIcons>
+        {/*  */}
+      </LiBackgroundImageContainer>
+    </LiQuoteBox>
   );
 }
 
