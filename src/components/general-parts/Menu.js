@@ -19,9 +19,41 @@ import time from "../../assets/time.png";
 function Menu() {
   const [isToggled, toggle] = useToggle(false);
   return (
-    <div>
-      <h1>Menu</h1>
-    </div>
+    <MenuBox>
+      <MenuIconContainer onClick={toggle}>
+        <MenuIcon />
+      </MenuIconContainer>
+      {isToggled && (
+        <MenuItems>
+          <Link style={{ textDecoration: "none" }} to="/">
+            <ItemAndIcon>
+              <MenuItem> Home </MenuItem>
+              <MenuItemIcon src={logo} />
+            </ItemAndIcon>
+          </Link>
+          {/*  */}
+          <Link style={{ textDecoration: "none" }} to="/synopsis">
+            <ItemAndIcon>
+              <MenuItem> Synopsis </MenuItem>
+              <MenuItemIcon src={description} />
+            </ItemAndIcon>
+          </Link>
+          {/*  */}
+          <Link style={{ textDecoration: "none" }} to="/userguide">
+            <ItemAndIcon>
+              <MenuItem> User guide </MenuItem>
+              <MenuItemIcon src={guide} />
+            </ItemAndIcon>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/general">
+            <ItemAndIcon>
+              <MenuItem> General </MenuItem>
+              <MenuItemIcon src={time} />
+            </ItemAndIcon>
+          </Link>
+        </MenuItems>
+      )}
+    </MenuBox>
   );
 }
 
