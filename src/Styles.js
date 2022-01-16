@@ -85,3 +85,83 @@ export const TopBar = styled.div`
   padding: 0.5rem;
   top: 0;
 `;
+
+// QUOTE CONTAINER
+
+export const QuoteBox = styled.div`
+  // background-color: black;
+  margin-bottom: 2rem;
+`;
+
+export const BackgroundImageContainer = styled.div`
+  background-image: url(${blackbackground});
+  background-size: cover;
+`;
+
+export const TopTextIcon = styled.div`
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+`;
+
+export const TextIcon = styled.div`
+  display: flex;
+  flexdirection: row;
+  alignitems: center;
+`;
+
+export const Tag = styled.h3`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const Quotetitle = styled.h2`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const TextAndQuotes = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+`;
+
+export const QuotesLeft = styled.div`
+  color: white;
+  font-size: 2rem;
+`;
+
+export const TheQuote = styled.p`
+  color: white;
+  font-size: 1.25rem;
+  margin: 1rem;
+  line-height: 1.7rem;
+  text-align: left;
+`;
+
+export const QuotesRight = styled.div`
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const CategoryIcons = styled.div`
+  background-color: white;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const IconButton = styled.button`
+  background-color: white;
+  border: none;
+`;
