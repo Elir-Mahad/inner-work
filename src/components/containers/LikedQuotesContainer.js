@@ -23,7 +23,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 //
 import { useStateValue } from "../../rca/StateProvider";
 
-function LikedQuotesContainer() {
+function LikedQuotesContainer({ id, tag, title, quoteText }) {
   return (
     <div>
       <h1>Liked quotes</h1>
