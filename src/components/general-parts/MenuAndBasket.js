@@ -4,9 +4,10 @@ import { TopBar } from "../../Styles";
 import Menu from "./Menu";
 function MenuAndBasket() {
   return (
-    <div>
-      <h1>Menu And basket</h1>
-    </div>
+    <TopBar>
+      <Menu />
+      <BasketHeartIcon />
+    </TopBar>
   );
 }
 
