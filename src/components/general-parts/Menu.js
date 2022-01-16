@@ -17,6 +17,7 @@ import guide from "../../assets/info.png";
 import time from "../../assets/time.png";
 //
 function Menu() {
+  const [isToggled, toggle] = useToggle(false);
   return (
     <div>
       <h1>Menu</h1>
