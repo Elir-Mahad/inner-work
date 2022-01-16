@@ -74,9 +74,43 @@ function QuoteContainer({ id, tag, title, quoteText }) {
   // console.log(nquoteText);
 
   return (
-    <div>
-      <h1>quote container</h1>
-    </div>
+    <QuoteBox>
+      <BackgroundImageContainer>
+        {/* Top texts and icons below */}
+        <TopTextIcon>
+          <TextIcon>
+            <SubjectIcon />
+            <Tag>{tag}</Tag>
+          </TextIcon>
+          <TextIcon>
+            <Quotetitle> {title}</Quotetitle>
+            <FormatListNumberedRtlIcon />
+          </TextIcon>
+        </TopTextIcon>
+        {/* The actual quote is below */}
+        <TextAndQuotes>
+          <QuotesLeft>
+            <FaQuoteLeft />
+          </QuotesLeft>
+          <TheQuote>{quoteText}</TheQuote>
+          <QuotesRight>
+            <FaQuoteRight />
+          </QuotesRight>
+        </TextAndQuotes>
+        {/* Liked icon below */}
+        <CategoryIcons>
+          <IconButton
+            style={{ color: iconColor }}
+            // the icon's color will be value that's stored in iconColor
+            onClick={addToBaskeAndChangeColor}
+            // On click trigger this function
+          >
+            <FavoriteIcon />
+          </IconButton>
+        </CategoryIcons>
+        {/*  */}
+      </BackgroundImageContainer>
+    </QuoteBox>
   );
 }
 
