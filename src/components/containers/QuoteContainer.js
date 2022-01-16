@@ -23,7 +23,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 //
 import { useStateValue } from "../../rca/StateProvider";
 
-function QuoteContainer() {
+function QuoteContainer({ id, tag, title, quoteText }) {
+  // split apart the object, and grab the id, title, and quote text
   return (
     <div>
       <h1>quote container</h1>
