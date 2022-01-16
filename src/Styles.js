@@ -165,3 +165,96 @@ export const IconButton = styled.button`
   background-color: white;
   border: none;
 `;
+
+// LIKED QUOTES
+
+// Quotes style - for liked quotes category
+
+export const LiQuoteBox = styled.div`
+  margin-bottom: 2rem;
+`;
+
+// export const LikedQuotesTitle = styled.p`
+//   text-align: center;
+//   font-size: 17px;
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//   margin-bottom: 1rem;
+//   background-color: #e8e8e4;
+//   color: black;
+//   border: 1px solid grey;
+// `;
+
+export const LiBackgroundImageContainer = styled.div`
+  background-color: #e8e8e4;
+  color: black;
+`;
+
+export const LiTopTextIcon = styled.div`
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+`;
+
+export const LiTextIcon = styled.div`
+  display: flex;
+  flexdirection: row;
+  alignitems: center;
+`;
+
+export const LiTag = styled.h3`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const LiQuotetitle = styled.h2`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const LiTextAndQuotes = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+`;
+
+export const LiQuotesLeft = styled.div`
+  font-size: 2rem;
+`;
+
+export const LiTheQuote = styled.p`
+  font-size: 1.25rem;
+  margin: 1rem;
+  line-height: 1.7rem;
+  text-align: left;
+`;
+
+export const LiQuotesRight = styled.div`
+  font-size: 2rem;
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const LiCategoryIcons = styled.div`
+  background-color: black;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const LiIconButton = styled.button`
+  color: white;
+  background-color: black;
+  border: none;
+`;
