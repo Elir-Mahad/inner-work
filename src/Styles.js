@@ -74,3 +74,14 @@ export const MenuItemIcon = styled.img`
   height: 1.5rem;
   background-color: white;
 `;
+
+// MenuAndBasket
+
+export const TopBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: black;
+  padding: 0.5rem;
+  top: 0;
+`;
