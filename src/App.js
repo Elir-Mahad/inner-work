@@ -8,6 +8,7 @@ import LandingScreen from "./components/screens/LandingScreen";
 import SynopsisScreen from "./components/screens/SynopsisScreen";
 import UserGuideScreen from "./components/screens/UserGuideScreen";
 import GeneralScreen from "./components/screens/GeneralScreen";
+import LikedQuotesScreen from "./components/screens/LikedQuotesScreen";
 //
 import { StateProvider } from "./rca/StateProvider";
 import { initialState } from "./rca/reducer";
@@ -31,7 +32,10 @@ function App() {
       <StateProvider initialState={initialState} reducer={reducer}>
         <Router>
           <Switch>
-            <Route path="/favourite">{/* Liked quotes route */}</Route>
+            <Route path="/favourite">
+              <MenuAndBasket />
+              <LikedQuotesScreen />
+            </Route>
             <Route path="/general">
               <MenuAndBasket />
               <GeneralScreen />
