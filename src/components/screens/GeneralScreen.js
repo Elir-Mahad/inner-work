@@ -5,6 +5,9 @@ import { data } from "../general-parts/Data";
 //
 
 function GeneralScreen() {
+  //
+  const quotesData = data.general;
+  //
   return (
     <div>
       <h1>General screen</h1>
