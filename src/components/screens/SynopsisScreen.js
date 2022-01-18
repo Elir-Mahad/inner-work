@@ -13,9 +13,32 @@ import pharoah from "../../assets/synopsis-image2.jpeg";
 
 function SynopsisScreen() {
   return (
-    <div>
-      <h1>Synopsis screen</h1>
-    </div>
+    <SynopsisBackground>
+      <SynopsisScreenImage src={mountainpath} />
+      <SynopsisContainer>
+        <DescriptionText>
+          In noise, <br />
+          there is no hearing. <br />
+        </DescriptionText>
+        <DescriptionText>
+          With unfocused vision, <br />
+          there is no sight. <br />
+          <DescriptionText></DescriptionText>
+          Without paitence, <br />
+          there is no understanding. <br />
+        </DescriptionText>
+      </SynopsisContainer>
+      <SynopsisScreenImage src={pharoah} />
+      <SynopsisContainer>
+        <DescriptionText>
+          Be the ship, <br />
+          that no wave can move.
+        </DescriptionText>
+        <Link style={{ textDecoration: "none" }} to="/userguide">
+          <SynopsisButton>Learn more</SynopsisButton>
+        </Link>
+      </SynopsisContainer>
+    </SynopsisBackground>
   );
 }
 
