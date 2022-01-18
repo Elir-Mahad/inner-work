@@ -313,3 +313,40 @@ export const IntroText = styled.p`
   position: fixed;
   bottom: 0;
 `;
+
+// Synopsis
+
+export const SynopsisBackground = styled.div`
+  background-color: #130f40;
+  background-image: linear-gradient(-100deg, #130f40 0%, #000000 64%);
+`;
+
+export const SynopsisScreenImage = styled.img`
+  width: 100%;
+`;
+
+export const SynopsisContainer = styled.div`
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+`;
+
+export const DescriptionText = styled.p`
+  text-align: center;
+  margin: 1rem;
+  // background-color:red;
+`;
+
+export const SynopsisButton = styled.button`
+  background-color: white;
+  color: black;
+  width: 9rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  cursor: pointer;
+`;
