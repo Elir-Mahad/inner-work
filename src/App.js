@@ -6,6 +6,7 @@ import MenuAndBasket from "./components/general-parts/MenuAndBasket";
 //
 import LandingScreen from "./components/screens/LandingScreen";
 import SynopsisScreen from "./components/screens/SynopsisScreen";
+import UserGuideScreen from "./components/screens/UserGuideScreen";
 //
 import { StateProvider } from "./rca/StateProvider";
 import { initialState } from "./rca/reducer";
@@ -31,7 +32,10 @@ function App() {
           <Switch>
             <Route path="/favourite">{/* Liked quotes route */}</Route>
             <Route path="/general">{/* General page route */}</Route>
-            <Route path="/userguide">{/* User guide page route */}</Route>
+            <Route path="/userguide">
+              <MenuAndBasket />
+              <UserGuideScreen />
+            </Route>
             <Route path="/synopsis">
               <MenuAndBasket />
               <SynopsisScreen />
