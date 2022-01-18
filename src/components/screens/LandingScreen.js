@@ -1,5 +1,13 @@
 import React from "react";
-
+import {
+  Japanesetitle,
+  JpLetter,
+  LettersJp,
+  WelcomeContainer,
+  LandingBackground,
+  IntroText,
+} from "../../Styles";
+//
 function LandingScreen() {
   return (
     <div>
