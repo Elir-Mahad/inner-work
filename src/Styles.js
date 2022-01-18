@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import samuraiguard from "./assets/welcome-screen-background.jpeg";
 
 // BasketHeart
 
@@ -257,4 +258,58 @@ export const LiIconButton = styled.button`
   color: white;
   background-color: black;
   border: none;
+`;
+
+// Landing
+
+export const LandingBackground = styled.div`
+  background-image: url(${samuraiguard});
+  height: 88vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+// Important:The code in the background image
+// makes the image take up the full height of the screen.
+// The height needs to be adjusted, based on the screen,
+//  so that there is no scroll on the screen.
+// For the the landing, i didn't want for there to be any scrolling,
+// so i set the height to 91.5vh;
+
+export const WelcomeContainer = styled.div`
+  //
+`;
+
+export const Japanesetitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const LettersJp = styled.div`
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`;
+
+export const JpLetter = styled.p`
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  width: 2rem;
+  padding: 0.5rem;
+`;
+
+export const IntroText = styled.p`
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
 `;
