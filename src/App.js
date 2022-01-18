@@ -33,23 +33,18 @@ function App() {
         <Router>
           <Routes>
             <Route path="/favourite">
-              <MenuAndBasket />
               <LikedQuotesScreen />
             </Route>
             <Route path="/general">
-              <MenuAndBasket />
               <GeneralScreen />
             </Route>
             <Route path="/userguide">
-              <MenuAndBasket />
               <UserGuideScreen />
             </Route>
             <Route path="/synopsis">
-              <MenuAndBasket />
               <SynopsisScreen />
             </Route>
             <Route path="/">
-              <MenuAndBasket />
               <LandingScreen />
             </Route>
           </Routes>
