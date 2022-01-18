@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //
-import MenuAndBasket from "./components/general-parts/MenuAndBasket";
-//
 import LandingScreen from "./components/screens/LandingScreen";
 import SynopsisScreen from "./components/screens/SynopsisScreen";
 import UserGuideScreen from "./components/screens/UserGuideScreen";
@@ -32,21 +30,31 @@ function App() {
       <StateProvider initialState={initialState} reducer={reducer}>
         <Router>
           <Routes>
-            <Route path="/favourite">
-              <LikedQuotesScreen />
-            </Route>
-            <Route path="/general">
-              <GeneralScreen />
-            </Route>
-            <Route path="/userguide">
-              <UserGuideScreen />
-            </Route>
-            <Route path="/synopsis">
-              <SynopsisScreen />
-            </Route>
-            <Route path="/">
-              <LandingScreen />
-            </Route>
+            <Route
+              //
+              path="/favourite"
+              element={<LikedQuotesScreen />}
+            />
+            <Route
+              //
+              path="/general"
+              element={<GeneralScreen />}
+            />
+            <Route
+              //
+              path="/userguide"
+              element={<UserGuideScreen />}
+            />
+            <Route
+              //
+              path="/synopsis"
+              element={<SynopsisScreen />}
+            />
+            <Route
+              //
+              path="/"
+              element={<LandingScreen />}
+            ></Route>
           </Routes>
         </Router>
       </StateProvider>
