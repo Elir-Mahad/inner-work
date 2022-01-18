@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //
 import MenuAndBasket from "./components/general-parts/MenuAndBasket";
 //
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <StateProvider initialState={initialState} reducer={reducer}>
         <Router>
-          <Switch>
+          <Routes>
             <Route path="/favourite">
               <MenuAndBasket />
               <LikedQuotesScreen />
@@ -52,7 +52,7 @@ function App() {
               <MenuAndBasket />
               <LandingScreen />
             </Route>
-          </Switch>
+          </Routes>
         </Router>
       </StateProvider>
     </div>

@@ -11,10 +11,10 @@ import {
 } from "../../Styles";
 import MenuIcon from "@material-ui/icons/Menu";
 //
-import logo from "../../assets/logo.jpeg";
-import description from "../../assets/description.png";
-import guide from "../../assets/info.png";
-import time from "../../assets/time.png";
+// import logo from "../../assets/logo.jpeg";
+// import description from "../../assets/description.png";
+// import guide from "../../assets/info.png";
+// import time from "../../assets/time.png";
 //
 function Menu() {
   const [isToggled, toggle] = useToggle(false);
@@ -28,27 +28,27 @@ function Menu() {
           <Link style={{ textDecoration: "none" }} to="/">
             <ItemAndIcon>
               <MenuItem> Home </MenuItem>
-              <MenuItemIcon src={logo} />
+              {/* <MenuItemIcon src={logo} /> */}
             </ItemAndIcon>
           </Link>
           {/*  */}
           <Link style={{ textDecoration: "none" }} to="/synopsis">
             <ItemAndIcon>
               <MenuItem> Synopsis </MenuItem>
-              <MenuItemIcon src={description} />
+              {/* <MenuItemIcon src={description} /> */}
             </ItemAndIcon>
           </Link>
           {/*  */}
           <Link style={{ textDecoration: "none" }} to="/userguide">
             <ItemAndIcon>
               <MenuItem> User guide </MenuItem>
-              <MenuItemIcon src={guide} />
+              {/* <MenuItemIcon src={guide} /> */}
             </ItemAndIcon>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/general">
             <ItemAndIcon>
               <MenuItem> General </MenuItem>
-              <MenuItemIcon src={time} />
+              {/* <MenuItemIcon src={time} /> */}
             </ItemAndIcon>
           </Link>
         </MenuItems>
