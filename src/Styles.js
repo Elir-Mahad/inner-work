@@ -399,3 +399,34 @@ export const UserGuideNext = styled.button`
   margin: auto;
   cursor: pointer;
 `;
+
+// LIKED QUOTES SCREEN
+
+// Category screen tagged template literal is defined above.
+// It is the first tagged template literal in the LikedQuotesScreen
+
+// If there are no liked quotes
+
+export const NoLikedQuotesContainer = styled.p`
+  background-color: black;
+  padding: 1rem;
+`;
+
+export const NoLikedQuotesText = styled.p`
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+`;
+
+// If there are liked quotes
+
+export const LikedQuotesTitle = styled.p`
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 1rem;
+  background-color: #e8e8e4;
+  color: black;
+  border: 1px solid grey;
+`;
