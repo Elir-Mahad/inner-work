@@ -10,9 +10,27 @@ import {
 //
 function LandingScreen() {
   return (
-    <div>
-      <h1>Landing Screen</h1>
-    </div>
+    <LandingBackground>
+      <WelcomeContainer>
+        <Japanesetitle>
+          <LettersJp>
+            <JpLetter> 戦 </JpLetter>
+            <JpLetter> 士 </JpLetter>
+            <JpLetter> ク </JpLetter>
+            <JpLetter> ラ </JpLetter>
+            <JpLetter> ス </JpLetter>
+          </LettersJp>
+          <LettersJp>
+            <JpLetter> 戦 </JpLetter>
+            <JpLetter> 士 </JpLetter>
+            <JpLetter> ク </JpLetter>
+            <JpLetter> ラ </JpLetter>
+            <JpLetter> ス </JpLetter>
+          </LettersJp>
+        </Japanesetitle>
+      </WelcomeContainer>
+      <IntroText>Follow the way</IntroText>
+    </LandingBackground>
   );
 }
 
