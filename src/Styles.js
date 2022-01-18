@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import samuraiguard from "./assets/welcome-screen-background.jpeg";
+import blackbackground from "./assets/black.png";
 
 // BasketHeart
 

@@ -7,7 +7,7 @@ import {
   MenuItems,
   ItemAndIcon,
   MenuItem,
-  MenuItemIcon,
+  // MenuItemIcon,
 } from "../../Styles";
 import MenuIcon from "@material-ui/icons/Menu";
 //
