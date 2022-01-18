@@ -350,3 +350,43 @@ export const SynopsisButton = styled.button`
   margin-top: 3rem;
   cursor: pointer;
 `;
+
+// User guide
+
+export const UserGuideBackground = styled.div`
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
+
+export const UserGuideScreenImage = styled.img`
+  height: 5rem;
+  display: block;
+  margin: auto;
+`;
+
+export const UserGuideContainer = styled.div`
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 100%;
+`;
+
+export const UserGuideInstruction = styled.p`
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: black;
+`;
+
+export const UserGuideNext = styled.button`
+  background-color: black;
+  color: white;
+  width: 9rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+`;
