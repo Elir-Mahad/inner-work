@@ -9,9 +9,19 @@ function GeneralScreen() {
   const quotesData = data.general;
   //
   return (
-    <div>
-      <h1>General screen</h1>
-    </div>
+    <CategoryScreen>
+      <div>
+        {/*  */}
+        {quotesData.map((item) => (
+          <QuoteContainer
+            id={item.id}
+            title={item.title}
+            tag={item.tag}
+            quoteText={item.quoteText}
+          />
+        ))}
+      </div>
+    </CategoryScreen>
   );
 }
 
