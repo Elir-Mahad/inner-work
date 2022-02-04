@@ -187,9 +187,7 @@ export const SynopsisButton = styled.button`
 
 export const UserGuideBackground = styled.div`
   height: 100%;
-  padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 1rem;
   padding-right: 1rem;
 `;
 
