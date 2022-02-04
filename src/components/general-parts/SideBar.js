@@ -7,21 +7,18 @@ function SideBar(props) {
   return (
     <Menu {...props}>
       {/*  */}
-      <Link
-      //
-      // to="/"
-      >
-        <a>Home</a>
-      </Link>
-      <Link>
-        <a>Resources</a>
-      </Link>
-      <Link>
-        <a>Philosophy</a>
-      </Link>
-      <Link>
-        <a>Ecosystems</a>
-      </Link>
+      {/* <Link to="/"> */}
+      <p>Home</p>
+      {/* </Link> */}
+      {/* <Link> */}
+      <p>Resources</p>
+      {/* </Link> */}
+      {/* <Link> */}
+      <p>Philosophy</p>
+      {/* </Link> */}
+      {/* <Link> */}
+      <p>Ecosystems</p>
+      {/* </Link> */}
       {/*  */}
     </Menu>
   );
