@@ -9,8 +9,9 @@ import {
   NoLikedQuotesContainer,
   NoLikedQuotesText,
 } from "../../Styles";
+//!------------------------------------------------------------IMPORTS
 
-function LikedQuotesScreen() {
+const LikedQuotes = () => {
   //
   const [{ basket }] = useStateValue();
   // THIS IS THE DATA LAYER FROM STATE PROVIDER
@@ -53,6 +54,5 @@ function LikedQuotesScreen() {
       </div>
     </CategoryScreen>
   );
-}
-
-export default LikedQuotesScreen;
+};
+export default LikedQuotes;

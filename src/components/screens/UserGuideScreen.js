@@ -7,19 +7,19 @@ import {
   UserGuideNext,
 } from "../../Styles";
 import infoicon from "../../assets/info.png";
-
-function UserGuideScreen() {
+//
+function UserGuide() {
   return (
     <UserGuideBackground>
       <UserGuideScreenImage src={infoicon} />
       <UserGuideContainer>
-        <UserGuideInstruction>
+      <UserGuideInstruction>
           This app contains a variety of quotes that are categorized by themes.
           Find a quote that you like, press the heart icon of that quote.
         </UserGuideInstruction>
         <UserGuideInstruction>
-          Click on the heart icon on the top right of the screen, and your liked
-          quote/quotes will appear.
+          Click on the heart icon on the top right of the screen, and your liked quote/quotes
+          will appear.
         </UserGuideInstruction>
         <UserGuideInstruction>
           On the top left of the quote box, you will see the name of the
@@ -30,7 +30,7 @@ function UserGuideScreen() {
           then this means that this quote belongs to the category 'Education'.
         </UserGuideInstruction>
         <UserGuideInstruction>
-          Some quotes are part of a series. If a quote is part of a series, then
+        Some quotes are part of a series. If a quote is part of a series, then
           on the top right of the quote box, you will see the quote title and
           its number within the series.
         </UserGuideInstruction>
@@ -40,9 +40,11 @@ function UserGuideScreen() {
           of a a series titled calculation.
         </UserGuideInstruction>
       </UserGuideContainer>
-      <UserGuideNext>General quotes</UserGuideNext>
+      <UserGuideNext>
+        General quotes
+      </UserGuideNext>
     </UserGuideBackground>
   );
 }
 
-export default UserGuideScreen;
+export default UserGuide;

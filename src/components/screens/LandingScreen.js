@@ -1,3 +1,4 @@
+//
 import React from "react";
 import {
   Japanesetitle,
@@ -8,7 +9,11 @@ import {
   IntroText,
 } from "../../Styles";
 //
-function LandingScreen() {
+
+//!------------------------------------------------------------IMPORTS
+
+const Landing = () => {
+  //
   return (
     <LandingBackground>
       <WelcomeContainer>
@@ -32,6 +37,7 @@ function LandingScreen() {
       <IntroText>Follow the way</IntroText>
     </LandingBackground>
   );
-}
+};
+export default Landing;
 
-export default LandingScreen;
+/* 戦士クラス - warrior class */

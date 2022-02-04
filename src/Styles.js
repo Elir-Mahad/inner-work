@@ -1,6 +1,10 @@
 import styled from "styled-components";
+// Background images
 import samuraiguard from "./assets/welcome-screen-background.jpeg";
+import darkbackground from "./assets/dark_texture_background.jpg";
 import blackbackground from "./assets/black.png";
+
+//-------------------------------------- General styles
 
 // BasketHeart
 
@@ -32,19 +36,7 @@ export const ItemCount = styled.p`
 
 // Menu
 
-export const MenuBox = styled.div`
-  //
-`;
-
-export const MenuIconContainer = styled.button`
-  display: flex;
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  border-radius: 3px;
-  justify-content: center;
-  padding: 0.4rem;
-`;
+export const MenuBox = styled.div``;
 
 export const MenuItems = styled.div`
   display: flex;
@@ -65,16 +57,26 @@ export const ItemAndIcon = styled.div`
   align-items: center;
 `;
 
+export const MenuItemIcon = styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+`;
+
 export const MenuItem = styled.a`
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
 `;
 
-export const MenuItemIcon = styled.img`
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: white;
+export const MenuIconContainer = styled.button`
+  display: flex;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  justify-content: center;
+  padding: 0.4rem;
 `;
 
 // MenuAndBasket
@@ -88,187 +90,7 @@ export const TopBar = styled.div`
   top: 0;
 `;
 
-// QUOTE CONTAINER
-
-export const QuoteBox = styled.div`
-  // background-color: black;
-  margin-bottom: 2rem;
-`;
-
-export const BackgroundImageContainer = styled.div`
-  background-image: url(${blackbackground});
-  background-size: cover;
-`;
-
-export const TopTextIcon = styled.div`
-  background-color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.8rem;
-`;
-
-export const TextIcon = styled.div`
-  display: flex;
-  flexdirection: row;
-  alignitems: center;
-`;
-
-export const Tag = styled.h3`
-  font-size: 1.1rem;
-  font-weight: 100;
-`;
-
-export const Quotetitle = styled.h2`
-  font-size: 1.1rem;
-  font-weight: 100;
-`;
-
-export const TextAndQuotes = styled.div`
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  display: flex;
-`;
-
-export const QuotesLeft = styled.div`
-  color: white;
-  font-size: 2rem;
-`;
-
-export const TheQuote = styled.p`
-  color: white;
-  font-size: 1.25rem;
-  margin: 1rem;
-  line-height: 1.7rem;
-  text-align: left;
-`;
-
-export const QuotesRight = styled.div`
-  color: white;
-  font-size: 2rem;
-  display: flex;
-  align-self: flex-end;
-`;
-
-export const CategoryIcons = styled.div`
-  background-color: white;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-`;
-
-export const IconButton = styled.button`
-  background-color: white;
-  border: none;
-`;
-
-// LIKED QUOTES
-
-// Quotes style - for liked quotes category
-
-export const LiQuoteBox = styled.div`
-  margin-bottom: 2rem;
-`;
-
-// export const LikedQuotesTitle = styled.p`
-//   text-align: center;
-//   font-size: 17px;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   margin-bottom: 1rem;
-//   background-color: #e8e8e4;
-//   color: black;
-//   border: 1px solid grey;
-// `;
-
-export const LiBackgroundImageContainer = styled.div`
-  background-color: #e8e8e4;
-  color: black;
-`;
-
-export const LiTopTextIcon = styled.div`
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.8rem;
-`;
-
-export const LiTextIcon = styled.div`
-  display: flex;
-  flexdirection: row;
-  alignitems: center;
-`;
-
-export const LiTag = styled.h3`
-  font-size: 1.1rem;
-  font-weight: 100;
-`;
-
-export const LiQuotetitle = styled.h2`
-  font-size: 1.1rem;
-  font-weight: 100;
-`;
-
-export const LiTextAndQuotes = styled.div`
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  display: flex;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-`;
-
-export const LiQuotesLeft = styled.div`
-  font-size: 2rem;
-`;
-
-export const LiTheQuote = styled.p`
-  font-size: 1.25rem;
-  margin: 1rem;
-  line-height: 1.7rem;
-  text-align: left;
-`;
-
-export const LiQuotesRight = styled.div`
-  font-size: 2rem;
-  display: flex;
-  align-self: flex-end;
-`;
-
-export const LiCategoryIcons = styled.div`
-  background-color: black;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-`;
-
-export const LiIconButton = styled.button`
-  color: white;
-  background-color: black;
-  border: none;
-`;
-
-// Quotes styles for all other categories
-
-export const CategoryScreen = styled.div`
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-`;
+// ------------------------------------- Page specific styles
 
 // Landing
 
@@ -401,12 +223,7 @@ export const UserGuideNext = styled.button`
   cursor: pointer;
 `;
 
-// LIKED QUOTES SCREEN
-
-// Category screen tagged template literal is defined above.
-// It is the first tagged template literal in the LikedQuotesScreen
-
-// If there are no liked quotes
+//Liked Quotes - no liked quotes
 
 export const NoLikedQuotesContainer = styled.p`
   background-color: black;
@@ -419,7 +236,7 @@ export const NoLikedQuotesText = styled.p`
   text-align: center;
 `;
 
-// If there are liked quotes
+// Quotes style - for liked quotes category
 
 export const LikedQuotesTitle = styled.p`
   text-align: center;
@@ -430,4 +247,170 @@ export const LikedQuotesTitle = styled.p`
   background-color: #e8e8e4;
   color: black;
   border: 1px solid grey;
+`;
+
+export const LiQuoteBox = styled.div`
+  margin-bottom: 2rem;
+`;
+
+export const LiBackgroundImageContainer = styled.div`
+  background-color: #e8e8e4;
+  color: black;
+`;
+
+export const LiTopTextIcon = styled.div`
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+`;
+
+export const LiTextIcon = styled.div`
+  display: flex;
+  flexdirection: row;
+  alignitems: center;
+`;
+
+export const LiTag = styled.h3`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const LiQuotetitle = styled.h2`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const LiTextAndQuotes = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+`;
+
+export const LiQuotesLeft = styled.div`
+  font-size: 2rem;
+`;
+
+export const LiQuotesRight = styled.div`
+  font-size: 2rem;
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const LiTheQuote = styled.p`
+  font-size: 1.25rem;
+  margin: 1rem;
+  line-height: 1.7rem;
+  text-align: left;
+`;
+
+export const LiCategoryIcons = styled.div`
+  background-color: black;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const LiIconButton = styled.button`
+  color: white;
+  background-color: black;
+  border: none;
+`;
+
+// Quotes styles for all other categories
+
+export const CategoryScreen = styled.div`
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`;
+// This styled component is used in all the category specific screen
+
+export const QuoteBox = styled.div`
+  // background-color: black;
+  margin-bottom: 2rem;
+`;
+
+export const BackgroundImageContainer = styled.div`
+  background-image: url(${blackbackground});
+  background-size: cover;
+`;
+
+export const TopTextIcon = styled.div`
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+`;
+
+export const TextIcon = styled.div`
+  display: flex;
+  flexdirection: row;
+  alignitems: center;
+`;
+
+export const Tag = styled.h3`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const Quotetitle = styled.h2`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
+
+export const TextAndQuotes = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+`;
+
+export const QuotesLeft = styled.div`
+  color: white;
+  font-size: 2rem;
+`;
+
+export const QuotesRight = styled.div`
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const TheQuote = styled.p`
+  color: white;
+  font-size: 1.25rem;
+  margin: 1rem;
+  line-height: 1.7rem;
+  text-align: left;
+`;
+
+export const CategoryIcons = styled.div`
+  background-color: white;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const IconButton = styled.button`
+  background-color: white;
+  border: none;
 `;

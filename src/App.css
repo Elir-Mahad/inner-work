@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: #e6e6e6;
+}
+
+.basket .MuiSvgIcon-root {
+  /* I wanted to change the color of the 
+  heart icon in the component BasketHeartIcon. 
+  --
+  I could have used the material ui class MuiSvgIcon-root. 
+  This class is the material ui class for all the material ui icons. 
+  But then all the icons would get affected.
+  --
+  So i gave the whole component the class 'basket'.
+  Then i targeted heart icon via the class MuiSvgIcon-root. 
+  -- 
+  Via this method, i was able to exactly target this icon 
+  without changing the style of the othermaterial ui icons. */
+  color: white;
+}

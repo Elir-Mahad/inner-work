@@ -1,3 +1,5 @@
+// This is where the data layer logic goes
+
 const basketFromLocalStorage = JSON.parse(
   localStorage.getItem("basket") || "[]"
 );
@@ -53,8 +55,6 @@ const reducer = (state, action) => {
   // title: "Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI VGA port),Black"
   // __proto__: Object
   // type: "ADD_TO_BASKET"
-
-  // -------------------------------------
 
   switch (action.type) {
     // switch stores an action, and the 'type' of that action

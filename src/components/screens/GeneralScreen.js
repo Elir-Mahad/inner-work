@@ -2,9 +2,10 @@ import React from "react";
 import QuoteContainer from "../containers/QuoteContainer";
 import { CategoryScreen } from "../../Styles";
 import { data } from "../general-parts/Data";
-//
 
-function GeneralScreen() {
+//!------------------------------------------------------------IMPORTS
+
+const General = () => {
   //
   const quotesData = data.general;
   //
@@ -23,6 +24,5 @@ function GeneralScreen() {
       </div>
     </CategoryScreen>
   );
-}
-
-export default GeneralScreen;
+};
+export default General;

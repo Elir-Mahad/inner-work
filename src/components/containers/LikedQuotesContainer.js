@@ -40,7 +40,6 @@ function LikedQuotesContainer({ id, tag, title, quoteText }) {
       // fetch the id of the item that's being removed
     });
   };
-  // Test to see if anything changed since last commit
 
   return (
     <LiQuoteBox>
