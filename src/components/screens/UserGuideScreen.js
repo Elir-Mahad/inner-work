@@ -8,6 +8,7 @@ import {
 } from "../../Styles";
 import infoicon from "../../assets/info.png";
 import SideBar from "../general-parts/SideBar";
+import { Link } from "react-router-dom";
 //
 function UserGuide() {
   return (
@@ -45,7 +46,9 @@ function UserGuide() {
             of a a series titled calculation.
           </UserGuideInstruction>
         </UserGuideContainer>
-        <UserGuideNext>General quotes</UserGuideNext>
+        <Link style={{ textDecoration: "none" }} to="/general">
+          <UserGuideNext>General quotes</UserGuideNext>
+        </Link>
       </div>
     </UserGuideBackground>
   );
