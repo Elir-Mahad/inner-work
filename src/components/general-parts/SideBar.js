@@ -11,14 +11,15 @@ function SideBar(props) {
       <p>Home</p>
       {/* </Link> */}
       {/* <Link> */}
-      <p>Resources</p>
+      <p>Synopsis</p>
       {/* </Link> */}
       {/* <Link> */}
-      <p>Philosophy</p>
+      <p>User guide</p>
       {/* </Link> */}
       {/* <Link> */}
-      <p>Ecosystems</p>
+      <p>General quotes</p>
       {/* </Link> */}
+      <p>Liked quotes</p>
       {/*  */}
     </Menu>
   );
