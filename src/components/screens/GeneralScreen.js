@@ -2,7 +2,7 @@ import React from "react";
 import QuoteContainer from "../containers/QuoteContainer";
 import { CategoryScreen } from "../../Styles";
 import { data } from "../general-parts/Data";
-
+import SideBar from "../general-parts/SideBar";
 //!------------------------------------------------------------IMPORTS
 
 const General = () => {
@@ -11,16 +11,19 @@ const General = () => {
   //
   return (
     <CategoryScreen>
-      <div>
-        {/*  */}
-        {quotesData.map((item) => (
-          <QuoteContainer
-            id={item.id}
-            title={item.title}
-            tag={item.tag}
-            quoteText={item.quoteText}
-          />
-        ))}
+      <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      <div id="page-wrap">
+        <div>
+          {/*  */}
+          {quotesData.map((item) => (
+            <QuoteContainer
+              id={item.id}
+              title={item.title}
+              tag={item.tag}
+              quoteText={item.quoteText}
+            />
+          ))}
+        </div>
       </div>
     </CategoryScreen>
   );
