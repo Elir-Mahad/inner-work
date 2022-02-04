@@ -1,11 +1,18 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
+import { IoIosClose } from "react-icons/io";
+import { CgMenuRight } from "react-icons/cg";
 //
 function SideBar(props) {
   //
   return (
-    <Menu {...props}>
+    <Menu
+      //
+      customBurgerIcon={<CgMenuRight />}
+      customCrossIcon={<IoIosClose />}
+      {...props}
+    >
       <Link to="/">
         <p>Home</p>
       </Link>

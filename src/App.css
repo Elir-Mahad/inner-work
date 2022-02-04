@@ -49,10 +49,11 @@ body {
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   left: 10px;
   top: 20px;
+  /* background-color: transparent; */
 }
 
 @media (max-width: 500px) {
@@ -65,7 +66,8 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background-color: black;
+  /* color: white; */
 }
 
 /* Position and sizing of clickable cross button */
@@ -75,9 +77,9 @@ body {
 }
 
 /* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
+/* .bm-cross { */
+/* background: black; */
+/* } */
 
 /* General sidebar styles */
 .bm-menu {

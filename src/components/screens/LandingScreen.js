@@ -28,13 +28,6 @@ const Landing = () => {
               <JpLetter> ラ </JpLetter>
               <JpLetter> ス </JpLetter>
             </LettersJp>
-            <LettersJp>
-              <JpLetter> 戦 </JpLetter>
-              <JpLetter> 士 </JpLetter>
-              <JpLetter> ク </JpLetter>
-              <JpLetter> ラ </JpLetter>
-              <JpLetter> ス </JpLetter>
-            </LettersJp>
           </Japanesetitle>
         </WelcomeContainer>
         <IntroText>Follow the way</IntroText>

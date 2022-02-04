@@ -6,6 +6,7 @@ import {
   SynopsisBackground,
   SynopsisScreenImage,
   SynopsisButton,
+  SynopsisHeading,
 } from "../../Styles";
 import mountainpath from "../../assets/synopsis-image1.jpeg";
 import pharoah from "../../assets/synopsis-image2.jpeg";
@@ -16,6 +17,7 @@ function Synopsis() {
     <SynopsisBackground>
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <div id="page-wrap">
+        <SynopsisHeading>Learn about the way</SynopsisHeading>
         <SynopsisScreenImage src={mountainpath} />
         <SynopsisContainer>
           <DescriptionText>
