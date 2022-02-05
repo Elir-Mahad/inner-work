@@ -24,8 +24,92 @@ export const data = {
     {
       id: "gen",
       tag: "general",
-      title: "What is circling? #1",
+      title: "What is circling?",
       quoteText: "Circling is, a presence practice. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #1",
+      quoteText: "Stop being reactive.  ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #2",
+      quoteText: "Slow down. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #3",
+      quoteText: "Give focused attention.  ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #4",
+      quoteText: "Hold connection intent. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #5",
+      quoteText: "Expose the, meta-conversation.",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #6",
+      quoteText: "Welcome everything. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #7",
+      quoteText: "Make them right.",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #8",
+      quoteText: "Get their world.",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #9",
+      quoteText: "Share vulnerably. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "How to circle? #10",
+      quoteText: "Deliver accurate, and compassionate reflections. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "Circling effects #1",
+      quoteText: "In the circle, we center the we-space. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "Circling effects #2",
+      quoteText: "In the circle, our boundaries soften. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "Circling effects #3",
+      quoteText: "In the circle, we drop into connection. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "Circling effects  #4",
+      quoteText: "In the circle, the Present moment, is perfected. ",
     },
 
     {
