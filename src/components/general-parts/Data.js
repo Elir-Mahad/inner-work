@@ -21,6 +21,7 @@ export const data = {
       quoteText:
         "A book can, provide a context, for shared understanding, and shared values;, and out of this, connection can emerge.",
     },
+    //
     {
       id: "gen",
       tag: "general",
@@ -87,6 +88,7 @@ export const data = {
       title: "How to circle? #10",
       quoteText: "Deliver accurate, and compassionate reflections. ",
     },
+    //
     {
       id: "gen",
       tag: "general",
@@ -111,27 +113,70 @@ export const data = {
       title: "Circling effects  #4",
       quoteText: "In the circle, the Present moment, is perfected. ",
     },
-
+    //
     {
       id: "gen",
       tag: "general",
-      title: "The world view #1",
-      quoteText:
-        "There are, individual methods, of spiritual growth, such as meditation, and individual therapy, and then there is, “mutual awakening”.",
+      title: "Types of circles  #1",
+      quoteText: "There are two common types of circles. ",
     },
     {
       id: "gen",
       tag: "general",
-      title: "The world view #2",
+      title: "Types of circles  #2",
       quoteText:
-        "We jump to, higher levels, of development, not by excluding, or making-wrong, where we are now, or where we were before, but by including it.",
+        "Birthday circles:, one individual, is the primary focus, for the entire group. ",
     },
     {
       id: "gen",
       tag: "general",
-      title: "The world view #3",
+      title: "Types of circles  #3",
       quoteText:
-        "Within an, external plan, the world can be, co-created by us,based on, moment-to-moment, experiences;, this is the essence, of authentic relating games. ",
+        "Organic circles:, attention flows, back and forth, between the group. ",
     },
+    //
+    {
+      id: "gen",
+      tag: "general",
+      title: "The Circle heals #1",
+      quoteText:
+        "We all have, ways of being, that are a result, of unhealed wounds. ",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "The Circle heals #2",
+      quoteText:
+        "In the circle, when we feel, that the other, is on our side, then their description, of how we occur to them, will let us discover, the emotional truths, and unconscious beliefs, underlying our behaviour;,things obvious, to everyone, except ourselves.",
+    },
+    {
+      id: "gen",
+      tag: "general",
+      title: "The Circle heals #3",
+      quoteText:
+        "In the circle, the other heals, for people see sharing, as permission to share, more of themselves.",
+    },
+    //
+    // {
+    //   id: "gen",
+    //   tag: "general",
+    //   title: "The world view #1",
+    //   quoteText:
+    //     "There are, individual methods, of spiritual growth, such as meditation, and individual therapy, and then there is, “mutual awakening”.",
+    // },
+    // {
+    //   id: "gen",
+    //   tag: "general",
+    //   title: "The world view #2",
+    //   quoteText:
+    //     "We jump to, higher levels, of development, not by excluding, or making-wrong, where we are now, or where we were before, but by including it.",
+    // },
+    // {
+    //   id: "gen",
+    //   tag: "general",
+    //   title: "The world view #3",
+    //   quoteText:
+    //     "Within an, external plan, the world can be, co-created by us,based on, moment-to-moment, experiences;, this is the essence, of authentic relating games. ",
+    // },
   ],
 };
