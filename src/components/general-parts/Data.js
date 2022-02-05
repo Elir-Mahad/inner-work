@@ -1,32 +1,46 @@
 export const data = {
   general: [
+    // {
+    //   id: "gen",
+    //   tag: "general",
+    //   title: "",
+    //   quoteText:
+    //     "",
+    // },
     {
-      id: "gen1",
+      id: "gen",
       tag: "general",
-      title: "Value of a book",
+      title: "Questions",
       quoteText:
-        "A book can provide a context, of shared understanding and shared values, from which a powerful conversation can emerge.",
+        "When and how, do we give to others?, When and how, do we receive from them ?, When and how, do we give to ourselves ? , What is really going on, here between us ?",
     },
     {
-      id: "gen2",
+      id: "gen",
+      tag: "general",
+      title: "Book",
+      quoteText:
+        "A book can, provide a context, for shared understanding, and shared values;, and out of this, connection can emerge.",
+    },
+    {
+      id: "gen",
       tag: "general",
       title: "The world view #1",
       quoteText:
-        "There are individual methods of spiritual growth, such as meditation and individual therapy, and then there are types of “mutual awakening”.",
+        "There are, individual methods, of spiritual growth, such as meditation, and individual therapy, and then there is, “mutual awakening”.",
     },
     {
-      id: "gen3",
+      id: "gen",
       tag: "general",
       title: "The world view #2",
       quoteText:
-        "We jump to higher levels of development not by excluding or making-wrong where we are now or where we were at before, but by including it.",
+        "We jump to, higher levels, of development, not by excluding, or making-wrong, where we are now, or where we were before, but by including it.",
     },
     {
-      id: "gen4",
+      id: "gen",
       tag: "general",
       title: "The world view #3",
       quoteText:
-        "Within an external plan or form, the world can be co-created by us based on moment-to-moment experience. This is what the authentic relating games are. ",
+        "Within an, external plan, the world can be, co-created by us,based on, moment-to-moment, experiences;, this is the essence, of authentic relating games. ",
     },
   ],
 };

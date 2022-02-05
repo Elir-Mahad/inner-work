@@ -357,22 +357,22 @@ export const TopTextIcon = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.8rem;
+  padding: 0.5rem;
 `;
 
 export const TextIcon = styled.div`
   display: flex;
-  flexdirection: row;
-  alignitems: center;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const Tag = styled.h3`
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 100;
 `;
 
 export const Quotetitle = styled.h2`
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 100;
 `;
 
@@ -386,22 +386,22 @@ export const TextAndQuotes = styled.div`
 
 export const QuotesLeft = styled.div`
   color: white;
-  font-size: 2rem;
-`;
-
-export const QuotesRight = styled.div`
-  color: white;
-  font-size: 2rem;
-  display: flex;
-  align-self: flex-end;
+  font-size: 1rem;
 `;
 
 export const TheQuote = styled.p`
   color: white;
   font-size: 1.25rem;
-  margin: 1rem;
+  margin-left: 0.3rem;
   line-height: 1.7rem;
   text-align: left;
+`;
+
+export const QuotesRight = styled.div`
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-self: flex-end;
 `;
 
 export const CategoryIcons = styled.div`
