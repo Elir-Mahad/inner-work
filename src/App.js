@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 //
 import LandingScreen from "./components/screens/LandingScreen";
 import SynopsisScreen from "./components/screens/SynopsisScreen";
@@ -28,35 +28,35 @@ function App() {
   return (
     <div className="App">
       <StateProvider initialState={initialState} reducer={reducer}>
-        <Router>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route
               //
-              path="/inner-work/favourite"
+              path="/favourite"
               element={<LikedQuotesScreen />}
             />
             <Route
               //
-              path="/inner-work/general"
+              path="/general"
               element={<GeneralScreen />}
             />
             <Route
               //
-              path="/inner-work/userguide"
+              path="/userguide"
               element={<UserGuideScreen />}
             />
             <Route
               //
-              path="/inner-work/synopsis"
+              path="/synopsis"
               element={<SynopsisScreen />}
             />
             <Route
               //
-              path="/inner-work"
+              path="/"
               element={<LandingScreen />}
             ></Route>
           </Routes>
-        </Router>
+        </HashRouter>
       </StateProvider>
     </div>
   );
