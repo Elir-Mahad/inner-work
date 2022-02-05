@@ -32,27 +32,27 @@ function App() {
           <Routes>
             <Route
               //
-              path="/favourite"
+              path="/inner-work/favourite"
               element={<LikedQuotesScreen />}
             />
             <Route
               //
-              path="/general"
+              path="/inner-work/general"
               element={<GeneralScreen />}
             />
             <Route
               //
-              path="/userguide"
+              path="/inner-work/userguide"
               element={<UserGuideScreen />}
             />
             <Route
               //
-              path="/synopsis"
+              path="/inner-work/synopsis"
               element={<SynopsisScreen />}
             />
             <Route
               //
-              path="/"
+              path="/inner-work"
               element={<LandingScreen />}
             ></Route>
           </Routes>
