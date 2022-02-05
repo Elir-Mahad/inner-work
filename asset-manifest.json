@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/inner-work/static/css/main.a45d0af3.css",
-    "main.js": "/inner-work/static/js/main.f02fdca7.js",
+    "main.js": "/inner-work/static/js/main.cbb11070.js",
     "static/js/377.c66feeb3.chunk.js": "/inner-work/static/js/377.c66feeb3.chunk.js",
     "static/media/welcome-screen-background.jpeg": "/inner-work/static/media/welcome-screen-background.69f9b710cfb53f8d1648.jpeg",
     "static/media/synopsis-image1.jpeg": "/inner-work/static/media/synopsis-image1.bd13bf34a68973f8dca0.jpeg",
@@ -11,11 +11,11 @@
     "static/media/info.png": "/inner-work/static/media/info.085b237c23a8238506e4.png",
     "index.html": "/inner-work/index.html",
     "main.a45d0af3.css.map": "/inner-work/static/css/main.a45d0af3.css.map",
-    "main.f02fdca7.js.map": "/inner-work/static/js/main.f02fdca7.js.map",
+    "main.cbb11070.js.map": "/inner-work/static/js/main.cbb11070.js.map",
     "377.c66feeb3.chunk.js.map": "/inner-work/static/js/377.c66feeb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a45d0af3.css",
-    "static/js/main.f02fdca7.js"
+    "static/js/main.cbb11070.js"
   ]
 }
