@@ -3,7 +3,6 @@ import QuoteContainer from "../containers/QuoteContainer";
 import { CategoryScreen } from "../../Styles";
 import { data } from "../general-parts/Data";
 import SideBar from "../general-parts/SideBar";
-import BasketHeartIcon from "../general-parts/BasketHeartIcon";
 //!------------------------------------------------------------IMPORTS
 
 const General = () => {

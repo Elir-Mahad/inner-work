@@ -73,6 +73,27 @@ function QuoteContainer({ id, tag, title, quoteText }) {
 
   // console.log(nquoteText);
 
+  function NewlineText(props) {
+    //
+    const text = props.text;
+    //
+    if (text == null) {
+      return `nothing here`;
+    } else {
+      return (
+        text
+          //
+          .split(",")
+          // split at end of period
+          .map((str) => (
+            // map all strings on new lines
+            <p>{str}</p>
+            // the string replace the square brackets with empty space
+          ))
+      );
+    }
+  }
+
   return (
     <QuoteBox>
       <BackgroundImageContainer>
@@ -92,7 +113,10 @@ function QuoteContainer({ id, tag, title, quoteText }) {
           <QuotesLeft>
             <FaQuoteLeft />
           </QuotesLeft>
-          <TheQuote>{quoteText}</TheQuote>
+          {/* <TheQuote>{quoteText}</TheQuote> */}
+          <TheQuote>
+            <NewlineText text={quoteText} />
+          </TheQuote>
           <QuotesRight>
             <FaQuoteRight />
           </QuotesRight>
