@@ -10,17 +10,24 @@ export const data = {
     {
       id: "gen",
       tag: "general",
-      title: "Questions",
+      title: "Key Questions",
       quoteText:
-        "When and how, do we give to others?, When and how, do we receive from them ?, When and how, do we give to ourselves ? , What is really going on, here between us ?",
+        "When and how, do we give to others?, When and how, do we receive, from them ?, When and how, do we give, to ourselves ?, What happening here, between us ?",
     },
     {
       id: "gen",
       tag: "general",
-      title: "Book",
+      title: "Value of a Book",
       quoteText:
         "A book can, provide a context, for shared understanding, and shared values;, and out of this, connection can emerge.",
     },
+    {
+      id: "gen",
+      tag: "general",
+      title: "What is circling? #1",
+      quoteText: "Circling is, a presence practice. ",
+    },
+
     {
       id: "gen",
       tag: "general",

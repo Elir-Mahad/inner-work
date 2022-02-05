@@ -101,10 +101,10 @@ function QuoteContainer({ id, tag, title, quoteText }) {
         <TopTextIcon>
           <TextIcon>
             <SubjectIcon />
-            <Tag>{tag}</Tag>
+            <Tag style={{ paddingLeft: "0.2rem" }}>{tag}</Tag>
           </TextIcon>
           <TextIcon>
-            <Quotetitle> {title}</Quotetitle>
+            <Quotetitle style={{ paddingRight: "0.2rem" }}> {title}</Quotetitle>
             <FormatListNumberedRtlIcon />
           </TextIcon>
         </TopTextIcon>

@@ -341,8 +341,8 @@ export const CategoryScreen = styled.div`
 
 export const QuoteBox = styled.div`
   margin-bottom: 2rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 2rem;
 `;
 
@@ -357,7 +357,10 @@ export const TopTextIcon = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 `;
 
 export const TextIcon = styled.div`
@@ -392,9 +395,10 @@ export const QuotesLeft = styled.div`
 export const TheQuote = styled.p`
   color: white;
   font-size: 1.25rem;
-  margin-left: 0.3rem;
+  margin-left: 0.5rem;
   line-height: 1.7rem;
   text-align: left;
+  width: 100%;
 `;
 
 export const QuotesRight = styled.div`
